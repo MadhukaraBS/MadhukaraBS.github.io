@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wind Speed</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:800" rel="stylesheet">  <style>
+  <style>
+    .double-space {
+    line-height: 2;
+    position: relative; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+
+    body
+    {
+      background-color: #eee;
+    }
+    .mycol
+    {
+      background-color: white;
+      color: green;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: 1300px)
+    {
+      .mycol
+      {
+        color: green;
+        font-weight: bold;
+        font-size : 30px;
+      }
+    }
+    .h4Font
+    {
+    }
+    @media only screen and (max-width: 600px)
+    {
+      .h4Font
+      {
+          font-size : 18px;
+      }
+    }
+    .box
+    { 
+      border: 1px solid white; 
+    } 
+    .box:hover
+    { 
+      outline: 2px solid black; 
+    }
+    .LLogo
+    {
+      font-family:'EB Garamond', serif;
+      font-size:35px;
+      background-color: #0FADA6;
+    }
+    @media only screen and (max-width: 600px)
+    {
+      .LLogo
+      {
+        font-family:'EB Garamond', serif;
+        font-size:35px;
+        background-color: #0FADA6;
+      }
+    }
+
+    .NavbarBack
+    {
+    }
+    @media (max-width: 576px)
+    {
+      .NavbarBack
+      {
+        background-color: #0FADA6 !important;
+      }
+    }
+  </style>
+  </head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light p-0 NavbarBack">
+  <a class="navbar-brand text-white p-1 ml-5 LLogo" href="index.html">Lattitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse mw-100" id="collapsingNavbar3">
+      <ul class="nav navbar-nav w-100 justify-content-end">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Plots
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Wind speed</a>
+            </div>
+          <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+          </li>
+          </li>
+          
+      </ul>
+  </div>    
+</nav>
+
+<div class="container-fluid m-0 p-0 mh-100" style="background-color: #eee;">
+	<div class="row m-0 p-4 w-90">
+		<div class="col-lg-8">
+      <div style="margin:20px" class='bg-white shadow'>
+        <h1 class="border-bottom p-3 m-3 mycol">Wind Speed</h1>
+        <div class="clearfix my-4">
+        <img class="img-fluid float-left p-2" src="Resources/assets/images/fig4.png"  style="width:40%;height:40%;" alt="Latitude Vs Wind Speed">
+		<div class="double-space m-2 p-2">
+        <p>There is no strong relationship between latitude and wind speed, however in northern hemispheres there is a flurry of cities with over 20 mph of wind.</p>
+      </div>
+      </div>
+    </div>
+		</div>
+		<div class="col-lg-4">
+      <div style="margin:20px" class='bg-white clearfix shadow'>
+		    <h1 class="border-bottom p-3 m-3 mycol">Visualizations</h1>
+        <a href="maxtemp.html">
+          <img class="img-fluid hoverable float-left p-2 box"
+             src="Resources/assets/images/fig1.png"  style="width:50%" alt="Latitude Vs Temperature">
+        </a>
+        <a href="humidity.html">
+          <img class="img-fluid hoverable float-left p-2 box"
+             src="Resources/assets/images/fig2.png"  style="width:50%" alt="Latitude Vs Humidity">
+        </a>
+        <a href="cloudiness.html">
+          <img class="img-fluid hoverable float-left p-2 box"
+             src="Resources/assets/images/fig3.png"  style="width:50%" alt="Latitude Vs Cloudiness">
+        </a>
+        <a href="windspeed.html">
+          <img class="img-fluid hoverable float-left p-2 box"
+             src="Resources/assets/images/fig4.png"  style="width:50%" alt="Latitude Vs Windspeed">
+        </a>
+		</div>
+		</div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-success navbar-dark px-0 pb-0 m-0 fixed-bottom">
+  <div class="d-flex flex-column w-100">
+    <div class="p-2 text-white bg-secondary text-center" style="background-color: #000;">&copy Copyright</div>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
+
